@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule cennik prices.html
+RewriteRule galeria photos.html
+RewriteRule catering-dietetyczny index.html
+

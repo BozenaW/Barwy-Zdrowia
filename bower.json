@@ -1,0 +1,10 @@
+{
+  "name": "barwyZdrowia",
+  "authors": [
+    "Bożena Warchał <bozena.warchal@gmail.com>"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "font-awesome": "4.7.0",
+  }
+}

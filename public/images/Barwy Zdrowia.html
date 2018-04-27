@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)http://localhost:63342/BarwyZdrowia/public/index.html?_ijt=eidei4c62vdrh2ccha0hl983hi -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="./Barwy Zdrowia_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./Barwy Zdrowia_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Barwy Zdrowia_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="./Barwy Zdrowia_files/style.css">
+
+    <script src="./Barwy Zdrowia_files/angular.min.js"></script>
+    <script type="text/javascript" src="./Barwy Zdrowia_files/script.js"></script>
+    <script src="./Barwy Zdrowia_files/jquery.js"></script>
+
+    <title>Barwy Zdrowia</title>
+</head>
+<body>
+
+<div class="main-container ng-scope" ng-app="app" ng-controller="myCtrl">
+    <div class="header">
+        <div id="mainText">Barwy Zdrowia </div>
+
+
+    </div>
+    <nav class="navbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a><img class="myLogo" src="./Barwy Zdrowia_files/logo.png" width="100px" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://localhost:63342/BarwyZdrowia/public/index.html?_ijt=eidei4c62vdrh2ccha0hl983hi#">Home</a></li>
+                    <li><a href="http://localhost:63342/BarwyZdrowia/public/index.html?_ijt=eidei4c62vdrh2ccha0hl983hi#">Home</a></li>
+                    <li><a href="http://localhost:63342/BarwyZdrowia/public/index.html?_ijt=eidei4c62vdrh2ccha0hl983hi#">Home</a></li>
+                    <li><a href="http://localhost:63342/BarwyZdrowia/public/index.html?_ijt=eidei4c62vdrh2ccha0hl983hi#">Home</a></li>
+                </ul>
+            </div>
+    </nav>
+
+    <div class="whyUs">
+        <div class="text">
+            <span class="divTitle ">Dlaczego my ?</span>
+        </div>
+        <div class="row container">images
+            <div class="col-md-4"><div class="circleBox"><img src="./Barwy Zdrowia_files/pineska.png" width="90px" alt=""></div>
+                <div class="whyUsTitles">Robimy to, co kochamy!</div>
+                <div class="description">Zdrowe odżywianie to nasza pasja.Chcemy pokazać, że dieta to nie tylko zbilansowane posiłki ale przede wszystkim smaczna kuchnia!</div>
+            </div>
+            <div class="col-md-4"><div class="circleBox"><img src="./Barwy Zdrowia_files/pineska.png" width="90px" alt=""></div>
+                <div class="whyUsTitles">Zdrowo i świeżo!</div>
+                <div class="description">Stawiamy na zdrowe, świeże a co za tym idzie smaczne posiłki. Składniki wybieramy z szczególną starannością aby zapewnić najwyższą jakość przygotowanych potraw.</div>
+            </div>
+            <div class="col-md-4"><div class="circleBox"><img src="./Barwy Zdrowia_files/pineska.png" width="90px" alt=""></div>
+                <div class="whyUsTitles">Prosto pod drzwi!</div>
+                <div class="description">Dbając o Twój czas dowozimy codziennie 5 świeżych posiłków prosto pod drzwi Twojego domu czy biura.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="prices">
+        <div class="text">
+            <span class="divTitle ">Wybierz zestaw dla siebie!</span>
+        </div>
+        <div class="row">
+        <button ng-click="chooseDiet(&#39;optimal&#39;)">OPTIMAL</button>
+        <button ng-click="chooseDiet(&#39;sport&#39;)"> SPORT</button>
+        <button>VEGA</button>
+    </div>
+        <div class="row container">
+
+            <!--<div class="col-md-4" ng-repeat="(x, y) in Opt3000">-->
+                <!--<div class="kcal"> {{x}}kcal</div>-->
+                <!--<table>-->
+                    <!--<tbody>-->
+                    <!--<tr  ng-repeat="(key, value) in Opt3000">-->
+                        <!--<td> {{}}dni:</td>-->
+                        <!--<td> {{}}zł / dzień</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+
+
+            <!-- ngRepeat: (kcal, price) in Opt3000 --><div class="col-md-4 ng-scope" ng-repeat="(kcal, price) in Opt3000">
+                <div class="kcal ng-binding"> 1200 kcal</div>
+                <table>
+                    <tbody>
+                    <!-- ngRepeat: (key, value) in price --><tr ng-repeat="(key, value) in price" class="ng-scope">
+                        <td class="ng-binding"> 7dni:</td>
+                        <td class="ng-binding"> 43zł / dzień</td>
+                    </tr><!-- end ngRepeat: (key, value) in price --><tr ng-repeat="(key, value) in price" class="ng-scope">
+                        <td class="ng-binding"> 14dni:</td>
+                        <td class="ng-binding"> 42zł / dzień</td>
+                    </tr><!-- end ngRepeat: (key, value) in price --><tr ng-repeat="(key, value) in price" class="ng-scope">
+                        <td class="ng-binding"> 21dni:</td>
+                        <td class="ng-binding"> 41zł / dzień</td>
+                    </tr><!-- end ngRepeat: (key, value) in price --><tr ng-repeat="(key, value) in price" class="ng-scope">
+                        <td class="ng-binding"> 28dni:</td>
+                        <td class="ng-binding"> 40zł / dzień</td>
+                    </tr><!-- end ngRepeat: (key, value) in price -->
+                    </tbody>
+                </table>
+            </div><!-- end ngRepeat: (kcal, price) in Opt3000 --><div class="col-md-4 ng-scope" ng-repeat="(kcal, price) in Opt3000">
+                <div class="kcal ng-binding"> 1500 kcal</div>
+                <table>
+                    <tbody>
+                    <!-- ngRepeat: (key, value) in price --><tr ng-repeat="(key, value) in price" class="ng-scope">
+                        <td class="ng-binding"> 7dni:</td>
+                        <td class="ng-binding"> 46zł / dzień</td>
+                    </tr><!-- end ngRepeat: (key, value) in price --><tr ng-repeat="(key, value) in price" class="ng-scope">
+                        <td class="ng-binding"> 14dni:</td>
+                        <td class="ng-binding"> 45zł / dzień</td>
+                    </tr><!-- end ngRepeat: (key, value) in price --><tr ng-repeat="(key, value) in price" class="ng-scope">
+                        <td class="ng-binding"> 21dni:</td>
+                        <td class="ng-binding"> 44zł / dzień</td>
+                    </tr><!-- end ngRepeat: (key, value) in price --><tr ng-repeat="(key, value) in price" class="ng-scope">
+                        <td class="ng-binding"> 28dni:</td>
+                        <td class="ng-binding"> 43zł / dzień</td>
+                    </tr><!-- end ngRepeat: (key, value) in price -->
+                    </tbody>
+                </table>
+            </div><!-- end ngRepeat: (kcal, price) in Opt3000 --><div class="col-md-4 ng-scope" ng-repeat="(kcal, price) in Opt3000">
+                <div class="kcal ng-binding"> 2000 kcal</div>
+                <table>
+                    <tbody>
+                    <!-- ngRepeat: (key, value) in price --><tr ng-repeat="(key, value) in price" class="ng-scope">
+                        <td class="ng-binding"> 7dni:</td>
+                        <td class="ng-binding"> 50zł / dzień</td>
+                    </tr><!-- end ngRepeat: (key, value) in price --><tr ng-repeat="(key, value) in price" class="ng-scope">
+                        <td class="ng-binding"> 14dni:</td>
+                        <td class="ng-binding"> 49zł / dzień</td>
+                    </tr><!-- end ngRepeat: (key, value) in price --><tr ng-repeat="(key, value) in price" class="ng-scope">
+                        <td class="ng-binding"> 21dni:</td>
+                        <td class="ng-binding"> 48zł / dzień</td>
+                    </tr><!-- end ngRepeat: (key, value) in price --><tr ng-repeat="(key, value) in price" class="ng-scope">
+                        <td class="ng-binding"> 28dni:</td>
+                        <td class="ng-binding"> 47zł / dzień</td>
+                    </tr><!-- end ngRepeat: (key, value) in price -->
+                    </tbody>
+                </table>
+            </div><!-- end ngRepeat: (kcal, price) in Opt3000 -->
+
+            <!--<div class="col-md-4"><div class="kcal">1500 kcal</div>-->
+                <!--<table>-->
+                    <!--<tbody>-->
+                    <!--<tr ng-repeat="(key,value) in Opt1500">-->
+                        <!--<td>{{key}} dni:</td>-->
+                        <!--<td> {{value}} zł / dzień</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+
+            <!--<div class="col-md-4"><div class="kcal">2000 kcal</div>-->
+                <!--<table>-->
+                    <!--<tbody>-->
+                    <!--<tr ng-repeat="(key,value) in Opt2000">-->
+                        <!--<td>{{key}} dni:</td>-->
+                        <!--<td> {{value}} zł / dzień</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+
+            <!--<div class="col-md-4"><div class="kcal">1200 kcal</div>-->
+                <!--<table>-->
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                        <!--<td style="text-align: right;"><strong>1 tydzień:</strong></td>-->
+                        <!--<td style="text-align: left;">48zł za dzień</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td style="text-align: right;"><strong>2 tygodnie:</strong></td>-->
+                        <!--<td>47zł za dzień</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td style="text-align: right;"><strong>3 tygodnie:</strong></td>-->
+                        <!--<td>46zł za dzień</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td style="text-align: right;"><strong>4 tygodnie:</strong></td>-->
+                        <!--<td>45zł za dzień</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+
+            <!--<div class="col-md-4"><div class="kcal">1500 kcal</div>-->
+                <!--<table>-->
+                    <!--<tbody>-->
+                    <!--<tr>-->
+                        <!--<td style="text-align: right;"><strong>1 tydzień:</strong></td>-->
+                        <!--<td style="text-align: left;">48zł za dzień</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td style="text-align: right;"><strong>2 tygodnie:</strong></td>-->
+                        <!--<td>47zł za dzień</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td style="text-align: right;"><strong>3 tygodnie:</strong></td>-->
+                        <!--<td>46zł za dzień</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td style="text-align: right;"><strong>4 tygodnie:</strong></td>-->
+                        <!--<td>45zł za dzień</td>-->
+                    <!--</tr>-->
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+
+
+        </div>
+    </div>
+
+</div>
+
+
+<!--<script>-->
+    <!--function change() {-->
+        <!--var test =$('table td').text();-->
+        <!--console.log(test);-->
+    <!--}-->
+<!--</script>-->
+
+
+
+
+
+
+</body></html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Barwy Zdrowia - Catering Dietetyczny Tarnów Oferta!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Didact+Gothic|Satisfy|Caveat"
+          rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+</head>
+<body ng-app="app" ng-controller="myCtrl">
+
+<div class="container-fluid">
+    <nav class="navbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="first" href="catering-dietetyczny">Strona główna</a></li>
+                <li><a href="#promocje">Promocje</a></li>
+                <li><a href="galeria">Galeria</a></li>
+                <li><a href="catering-dietetyczny#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class=" boxPhoto"></div>
+
+
+        <div class="text">
+            <span>Oferta</span>
+            <div class="bar center-block"></div>
+        </div>
+        <h4 class="smalltext center-block">Specjalnie dla naszych Klientów istnieje możliwość indywidualnej
+            modyfikacji kaloryczności posiłków.
+            Ponadto gwarantujemy różnorodność posiłków – codziennie otrzymają Państwo inny zestaw posiłków!
+        </h4>
+
+    <h3 class=" text-uppercase myclass smalltext center-block">Zamów zestaw <span class="text-danger">miesięczny</span> i otrzymaj wizytę i konsultacje dietetyczne <span class="text-danger">GRATIS</span> !</h3>
+</div>
+
+
+<div class="container">
+
+    <div class="row dietBtn">
+
+        <div class=" dietBox col-xs-4 backY" data-aos="fade-up" ng-click="chooseDiet('optimal')">
+            <img src="images/groceries.png" width="100px" alt="">
+                <h4 class="smalltext text-uppercase text-warning">
+            Optimal</h4>
+        </div>
+
+        <div class=" dietBox col-xs-4 backR" data-aos="fade-up" ng-click="chooseDiet('sport')">
+            <img src="images/muscles.png" width="100px" alt="">
+            <h4 class="smalltext text-uppercase text-danger">Sport</h4>
+        </div>
+
+        <div class=" dietBox col-xs-4 backG" data-aos="fade-up" ng-click="chooseDiet('vega')">
+                <img src="images/apple.png" width="100px" alt="">
+            <h4 class="smalltext text-uppercase text-success">Wege</h4>
+
+            <div class="checkboxes">
+                <div id="check1"><input type="checkbox" ng-model="confirmed" ng-change="change()" id="checkBox1">
+                    bez glutenu
+                </div>
+                <div id="check2"><input type="checkbox" ng-model="confirmed2" ng-change="change()" id="checkBox2">
+                    bez laktozy
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="row calories">
+        <div class=" boxKcal col-md-4" ng-repeat="(kcal, price) in currentPlan">
+            <div class="kcal" data-aos="zoom-in"> {{kcal}} kcal</div>
+            <div class="bar center-block myMargin"></div>
+            <table>
+                <tbody>
+                <tr id="myTable" ng-repeat="(key, value) in price">
+                    <td> {{key}} dni</td>
+                    <td id="myValuee"> {{value}}zł / dzień</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid">
+    <div id="row-sentence">
+        <h1 data-aos="fade-up" class=" text-center">Najwartościowsza jest żywność, która leczy i lek, który żywi...</h1>
+    </div>
+
+    <div id="promocje">
+        <div class="text">
+            <span class="text-danger">PROMOCJE</span>
+            <div class="bar center-block"></div>
+        </div>
+        <h4 class="smalltext center-block">Zamów dowolne zestawy pod ten sam adres, a otrzymasz RABATY! Im
+            <span class="text-danger">więcej</span> zestawów tym <span class="text-danger">większe</span> promocje!</h4>
+        <h3 class="  text-uppercase myclass smalltext center-block">Zamów zestaw miesięczny<span class="text-danger"> do końca lutego</span> i otrzymaj rabat <span class="text-danger"> -30% </span>na pierwszy tydzień!</h3>
+    </div>
+</div>
+
+<div class="container" id="saleHref">
+    <div class="row boxSales">
+        <div class="sales col-md-3">
+            <div class="person text-center">2 osoby</div>
+            <div class="tri first"></div>
+            <span data-aos="fade-up" class="sale">-2%</span></div>
+        <div class="sales col-md-3">
+            <div class="person text-center">4 osoby</div>
+            <div class="tri second"></div>
+            <span data-aos="fade-up" class="sale">-4%</span></div>
+        <div class="sales col-md-3">
+            <div class="person text-center">6 osób</div>
+            <div class="tri third"></div>
+            <span data-aos="fade-up" class="sale">-6%</span></div>
+        <div class="sales col-md-3">
+            <div class="person text-center">10 osób i więcej</div>
+            <div class="tri fourth"></div>
+            <span data-aos="fade-up" class="sale">-10%</span></div>
+    </div>
+
+
+</div>
+
+
+<script>
+    AOS.init({
+        duration: 1200,
+    })
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
